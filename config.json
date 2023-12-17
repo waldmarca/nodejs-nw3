@@ -1,0 +1,13 @@
+{
+  "mail": {
+    "subject": "Сообщение с сайта",
+    "smtp": {
+      "host": "smtp.ethereal.email",
+      "port": "587",
+      "auth": {
+        "user": "onepic@ethereal.email",
+        "pass": "z8fYZZfUbgteVYYaGGJ"
+      }
+    }
+  }
+}

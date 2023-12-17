@@ -2,10 +2,26 @@ const createError = require('http-errors')
 const express = require('express')
 const path = require('path')
 const logger = require('morgan')
+const flash = require('connect-flash')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
 
 const mainRouter = require('./routes/')
 
 const app = express()
+
+app.use(cookieParser())
+app.use(
+  session({
+    resave: true,
+    saveUninitialized: true,
+    secret: 'Tim',
+    cookie: {
+      maxAge: 100000,
+    },
+  })
+)
+app.use(flash())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -18,6 +34,7 @@ process.env.NODE_ENV === 'development'
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+app.use(express.static(path.join(__dirname, 'upload')))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', mainRouter)
@@ -40,4 +57,6 @@ app.use((err, req, res, next) => {
   res.render('error')
 })
 
-app.listen(3000, () => {})
+app.listen(3000, () => {
+  console.log('Server listening on http://localhost:3000 ...')
+})

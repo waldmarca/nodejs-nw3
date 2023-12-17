@@ -1,19 +1,20 @@
 {
+  
   "skills": [
     {
-      "number": 12,
+      "number": 4,
       "text": "Возраст начала занятий на скрипке"
     },
     {
-      "number": 76,
+      "number": 15,
       "text": "Концертов отыграл"
     },
     {
-      "number": 30,
+      "number": 19,
       "text": "Максимальное число городов в туре"
     },
     {
-      "number": 20,
+      "number": 21,
       "text": "Лет на сцене в качестве скрипача"
     }
   ],
@@ -63,5 +64,10 @@
       "name": "Вино вдохновение",
       "price": 600
     }
-  ]
+  ],
+  "user": {
+    "email": "admin@gmail.com",
+    "salt": "fd04690225223629c2dc321e7eea4bcb",
+    "hash": "445778282faac8c5f760afbc9420808a4b537734132bd931d92d48824df92ddc2e8be5406af864269c2be7c9d6f10030db972374c5895b3da4a2246f4c4e92e9b4cc5b35b27c3545127c79aeed104ae37dcaa6516b9dd5e1946861e46f22413232cfc12458226790526fc174ba96f4ec74dc7e73e384b3e65f7386f546874696da45f5912244702ff5d4434a446e9f37200167e8ac3bbcca36726db4717dccc2b4807f88488eb923fef548625b483a47c0afac0d146040e52b939af5ce517cbd57ac8b90845404e5b52dbe13d965c053a7be8dd2431c27248d5883059cdb103240ebabc946665a34de0b70cef72612ca281348bcd9d3f8a7fa954669e52be4bd3ab6a5c3e18de07d547bde6f94d1a091f8fab58603ab35b1fa3be6dfe021d19140b9c779f861e11bb2fdbf0d4cd03a0b4cda072b79a21458c9cb485ebe6d445d79bed8af0700f77fa089384f4e77df9f31b6ec080e4c8837e76639e02388b018354bcb8467478f41a5aba40cc6e8a7ecf41e52008915b94dd9fae84994583a45dd94b19649ca06316c5b14432428aefb73b11ef90f891265305fbfbebcfafac280667e0ce243f70311dc8fa7e167d6025a8e7fd6d7ef91a6ea153f42002805c6a4ad8b50f8ef325a3aacfbf5a84c0aa5635a3d6fd7256b2c00307420377175f4c76e63d8d2c3c131328eda0ea5ad8cdfeeec6fb09977551357fef4ac8f9e537f"
+  }
 }
