@@ -15,7 +15,7 @@ router.get('/', (req, res, next) => {
   res.render('pages/admin', {
     title: 'Admin page',
     msgskill: req.flash('msgskill')[0],
-    msgfile: req.flash('msgfile'),
+    msgfile: req.flash('msgfile')[0],
     skills: db.get('skills').value()
   })
 })
