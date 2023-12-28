@@ -58,7 +58,7 @@ router.post('/upload', (req, res, next) => {
     На текущий момент эта информация хранится в файле data.json  в массиве products
   */
   const form = new formidable.IncomingForm()
-  const uploadDir = path.join(__dirname, '../upload')
+  const uploadDir = path.join(__dirname, '../incoming')
 
   form.parse(req, (err, fields, files) => {
     if (err) {
